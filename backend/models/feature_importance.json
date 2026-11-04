@@ -1,0 +1,290 @@
+[
+  {
+    "feature": "s_4_mean",
+    "importance": 0.616092913851181,
+    "base_sensor": "s_4",
+    "type": "mean"
+  },
+  {
+    "feature": "s_9_mean",
+    "importance": 0.10825232158369716,
+    "base_sensor": "s_9",
+    "type": "mean"
+  },
+  {
+    "feature": "s_11_mean",
+    "importance": 0.0738373371145394,
+    "base_sensor": "s_11",
+    "type": "mean"
+  },
+  {
+    "feature": "s_15_mean",
+    "importance": 0.03168391620600187,
+    "base_sensor": "s_15",
+    "type": "mean"
+  },
+  {
+    "feature": "s_14_mean",
+    "importance": 0.016148235148792243,
+    "base_sensor": "s_14",
+    "type": "mean"
+  },
+  {
+    "feature": "s_20_mean",
+    "importance": 0.013568992112771764,
+    "base_sensor": "s_20",
+    "type": "mean"
+  },
+  {
+    "feature": "s_21_mean",
+    "importance": 0.011222476575845432,
+    "base_sensor": "s_21",
+    "type": "mean"
+  },
+  {
+    "feature": "s_12_mean",
+    "importance": 0.008696221257671631,
+    "base_sensor": "s_12",
+    "type": "mean"
+  },
+  {
+    "feature": "s_13_mean",
+    "importance": 0.007268607959583905,
+    "base_sensor": "s_13",
+    "type": "mean"
+  },
+  {
+    "feature": "s_2_mean",
+    "importance": 0.007144707634088741,
+    "base_sensor": "s_2",
+    "type": "mean"
+  },
+  {
+    "feature": "s_7_mean",
+    "importance": 0.00644283119232348,
+    "base_sensor": "s_7",
+    "type": "mean"
+  },
+  {
+    "feature": "s_3_mean",
+    "importance": 0.006239949545639159,
+    "base_sensor": "s_3",
+    "type": "mean"
+  },
+  {
+    "feature": "s_17_mean",
+    "importance": 0.004689558285099465,
+    "base_sensor": "s_17",
+    "type": "mean"
+  },
+  {
+    "feature": "s_14_std",
+    "importance": 0.004533798610654119,
+    "base_sensor": "s_14",
+    "type": "std"
+  },
+  {
+    "feature": "s_9",
+    "importance": 0.004445413706089703,
+    "base_sensor": "s_9",
+    "type": "raw"
+  },
+  {
+    "feature": "s_8_mean",
+    "importance": 0.004244812981560428,
+    "base_sensor": "s_8",
+    "type": "mean"
+  },
+  {
+    "feature": "s_7_std",
+    "importance": 0.003976434332599148,
+    "base_sensor": "s_7",
+    "type": "std"
+  },
+  {
+    "feature": "s_9_std",
+    "importance": 0.003766950552786017,
+    "base_sensor": "s_9",
+    "type": "std"
+  },
+  {
+    "feature": "s_13_std",
+    "importance": 0.003560880890727115,
+    "base_sensor": "s_13",
+    "type": "std"
+  },
+  {
+    "feature": "setting_2_mean",
+    "importance": 0.003386687891572719,
+    "base_sensor": "setting",
+    "type": "mean"
+  },
+  {
+    "feature": "s_4_std",
+    "importance": 0.0033541755038286607,
+    "base_sensor": "s_4",
+    "type": "std"
+  },
+  {
+    "feature": "setting_1_std",
+    "importance": 0.0033053457783607802,
+    "base_sensor": "setting",
+    "type": "std"
+  },
+  {
+    "feature": "s_8_std",
+    "importance": 0.003301701787542922,
+    "base_sensor": "s_8",
+    "type": "std"
+  },
+  {
+    "feature": "s_11_std",
+    "importance": 0.0032166726796080064,
+    "base_sensor": "s_11",
+    "type": "std"
+  },
+  {
+    "feature": "s_21_std",
+    "importance": 0.0031955322125897865,
+    "base_sensor": "s_21",
+    "type": "std"
+  },
+  {
+    "feature": "setting_1_mean",
+    "importance": 0.003098137947325723,
+    "base_sensor": "setting",
+    "type": "mean"
+  },
+  {
+    "feature": "s_12_std",
+    "importance": 0.003094190902022425,
+    "base_sensor": "s_12",
+    "type": "std"
+  },
+  {
+    "feature": "s_3_std",
+    "importance": 0.0030914718088509634,
+    "base_sensor": "s_3",
+    "type": "std"
+  },
+  {
+    "feature": "s_20_std",
+    "importance": 0.003053630342106428,
+    "base_sensor": "s_20",
+    "type": "std"
+  },
+  {
+    "feature": "s_2_std",
+    "importance": 0.002970093453359419,
+    "base_sensor": "s_2",
+    "type": "std"
+  },
+  {
+    "feature": "s_14",
+    "importance": 0.002842583276973601,
+    "base_sensor": "s_14",
+    "type": "raw"
+  },
+  {
+    "feature": "setting_2_std",
+    "importance": 0.0027822747158897003,
+    "base_sensor": "setting",
+    "type": "std"
+  },
+  {
+    "feature": "s_15_std",
+    "importance": 0.0027777892293233217,
+    "base_sensor": "s_15",
+    "type": "std"
+  },
+  {
+    "feature": "s_17_std",
+    "importance": 0.0018790305226346726,
+    "base_sensor": "s_17",
+    "type": "std"
+  },
+  {
+    "feature": "s_4",
+    "importance": 0.0018151844219547414,
+    "base_sensor": "s_4",
+    "type": "raw"
+  },
+  {
+    "feature": "s_7",
+    "importance": 0.001797383046714075,
+    "base_sensor": "s_7",
+    "type": "raw"
+  },
+  {
+    "feature": "s_12",
+    "importance": 0.001747683842144898,
+    "base_sensor": "s_12",
+    "type": "raw"
+  },
+  {
+    "feature": "s_3",
+    "importance": 0.0015842689516909572,
+    "base_sensor": "s_3",
+    "type": "raw"
+  },
+  {
+    "feature": "s_21",
+    "importance": 0.0015824450050132902,
+    "base_sensor": "s_21",
+    "type": "raw"
+  },
+  {
+    "feature": "s_15",
+    "importance": 0.0015653471511388089,
+    "base_sensor": "s_15",
+    "type": "raw"
+  },
+  {
+    "feature": "s_2",
+    "importance": 0.0015168932721031328,
+    "base_sensor": "s_2",
+    "type": "raw"
+  },
+  {
+    "feature": "setting_1",
+    "importance": 0.0014517278368278057,
+    "base_sensor": "setting",
+    "type": "raw"
+  },
+  {
+    "feature": "s_11",
+    "importance": 0.00138850480257913,
+    "base_sensor": "s_11",
+    "type": "raw"
+  },
+  {
+    "feature": "s_20",
+    "importance": 0.0012113774695275486,
+    "base_sensor": "s_20",
+    "type": "raw"
+  },
+  {
+    "feature": "s_13",
+    "importance": 0.001146667177310773,
+    "base_sensor": "s_13",
+    "type": "raw"
+  },
+  {
+    "feature": "s_8",
+    "importance": 0.0009373299290265878,
+    "base_sensor": "s_8",
+    "type": "raw"
+  },
+  {
+    "feature": "setting_2",
+    "importance": 0.0007192670575018461,
+    "base_sensor": "setting",
+    "type": "raw"
+  },
+  {
+    "feature": "s_17",
+    "importance": 0.0003702424428254014,
+    "base_sensor": "s_17",
+    "type": "raw"
+  }
+]

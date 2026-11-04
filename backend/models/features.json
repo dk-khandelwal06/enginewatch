@@ -1,0 +1,136 @@
+{
+  "base_features": [
+    "setting_1",
+    "setting_2",
+    "s_2",
+    "s_3",
+    "s_4",
+    "s_7",
+    "s_8",
+    "s_9",
+    "s_11",
+    "s_12",
+    "s_13",
+    "s_14",
+    "s_15",
+    "s_17",
+    "s_20",
+    "s_21"
+  ],
+  "all_engineered_features": [
+    "setting_1",
+    "setting_2",
+    "s_2",
+    "s_3",
+    "s_4",
+    "s_7",
+    "s_8",
+    "s_9",
+    "s_11",
+    "s_12",
+    "s_13",
+    "s_14",
+    "s_15",
+    "s_17",
+    "s_20",
+    "s_21",
+    "setting_1_mean",
+    "setting_2_mean",
+    "s_2_mean",
+    "s_3_mean",
+    "s_4_mean",
+    "s_7_mean",
+    "s_8_mean",
+    "s_9_mean",
+    "s_11_mean",
+    "s_12_mean",
+    "s_13_mean",
+    "s_14_mean",
+    "s_15_mean",
+    "s_17_mean",
+    "s_20_mean",
+    "s_21_mean",
+    "setting_1_std",
+    "setting_2_std",
+    "s_2_std",
+    "s_3_std",
+    "s_4_std",
+    "s_7_std",
+    "s_8_std",
+    "s_9_std",
+    "s_11_std",
+    "s_12_std",
+    "s_13_std",
+    "s_14_std",
+    "s_15_std",
+    "s_17_std",
+    "s_20_std",
+    "s_21_std"
+  ],
+  "metadata": {
+    "setting_1": {
+      "name": "Altitude Setting",
+      "unit": "Mach/Alt factor"
+    },
+    "setting_2": {
+      "name": "Throttle Resolver Angle",
+      "unit": "TRA"
+    },
+    "s_2": {
+      "name": "LPC Outlet Temperature",
+      "unit": "\u00b0R"
+    },
+    "s_3": {
+      "name": "HPC Outlet Temperature",
+      "unit": "\u00b0R"
+    },
+    "s_4": {
+      "name": "LPT Outlet Temperature",
+      "unit": "\u00b0R"
+    },
+    "s_7": {
+      "name": "HPC Outlet Pressure",
+      "unit": "psia"
+    },
+    "s_8": {
+      "name": "Physical Fan Speed",
+      "unit": "rpm"
+    },
+    "s_9": {
+      "name": "Physical Core Speed",
+      "unit": "rpm"
+    },
+    "s_11": {
+      "name": "HPC Static Pressure",
+      "unit": "psia"
+    },
+    "s_12": {
+      "name": "Fuel Flow Ratio (W32/Ps30)",
+      "unit": "pps/psia"
+    },
+    "s_13": {
+      "name": "Corrected Fan Speed",
+      "unit": "rpm"
+    },
+    "s_14": {
+      "name": "Corrected Core Speed",
+      "unit": "rpm"
+    },
+    "s_15": {
+      "name": "Bypass Ratio",
+      "unit": "ratio"
+    },
+    "s_17": {
+      "name": "Bleed Enthalpy",
+      "unit": "btu/lbm"
+    },
+    "s_20": {
+      "name": "HPT Coolant Bleed",
+      "unit": "lbm/s"
+    },
+    "s_21": {
+      "name": "LPT Coolant Bleed",
+      "unit": "lbm/s"
+    }
+  }
+}

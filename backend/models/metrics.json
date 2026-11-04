@@ -1,0 +1,45 @@
+{
+  "dataset": "NASA C-MAPSS Turbofan Engine Degradation Simulation (FD001)",
+  "condition": "Sea Level (Single Operating Condition)",
+  "total_engines": 100,
+  "total_cycles": 20631,
+  "train_engines_count": 80,
+  "val_engines_count": 20,
+  "rul_cap": 125.0,
+  "rolling_window": 5,
+  "models": {
+    "random_forest": {
+      "nasa_score_total": 100968.76942471394,
+      "nasa_score_mean": 23.530358756633404,
+      "rmse": 19.94099220324052,
+      "mae": 13.979412614854061,
+      "early_count": 2645,
+      "late_count": 1646,
+      "early_mae": 10.061261381441655,
+      "late_mae": 20.27559123719659,
+      "r2": 0.7693117401874948
+    },
+    "ridge_regression": {
+      "nasa_score_total": 44845.998909691916,
+      "nasa_score_mean": 10.451176627753885,
+      "rmse": 21.205848274154295,
+      "mae": 17.715218363287885,
+      "early_count": 1959,
+      "late_count": 2332,
+      "early_mae": 16.398165814714552,
+      "late_mae": 18.8216102769479,
+      "r2": 0.7391185106929139
+    },
+    "mean_baseline": {
+      "nasa_score_total": 1177799.5007850325,
+      "nasa_score_mean": 274.4813565101451,
+      "rmse": 41.58116730822403,
+      "mae": 37.16825914705197,
+      "early_count": 2551,
+      "late_count": 1740,
+      "early_mae": 33.19051352410819,
+      "late_mae": 43.0,
+      "r2": -0.0030563227307989216
+    }
+  }
+}
