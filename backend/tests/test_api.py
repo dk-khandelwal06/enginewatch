@@ -8,20 +8,40 @@ import sys
 import pytest
 from pydantic import ValidationError
 
-sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'app')))
-sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'src')))
+TESTS_DIR = os.path.dirname(os.path.abspath(__file__))
+BACKEND_DIR = os.path.abspath(os.path.join(TESTS_DIR, '..'))
+APP_DIR = os.path.join(BACKEND_DIR, 'app')
+SRC_DIR = os.path.join(BACKEND_DIR, 'src')
+ROOT_DIR = os.path.abspath(os.path.join(BACKEND_DIR, '..'))
 
-from main import (
-    load_artifacts,
-    get_health,
-    get_model_info,
-    get_metrics,
-    predict_rul,
-    list_sample_engines,
-    get_engine_detail,
-    get_preset_inputs
-)
-from schemas import PredictRequest, SensorReading
+for p in [ROOT_DIR, BACKEND_DIR, APP_DIR, SRC_DIR]:
+    if p not in sys.path:
+        sys.path.insert(0, p)
+
+try:
+    from backend.app.main import (
+        load_artifacts,
+        get_health,
+        get_model_info,
+        get_metrics,
+        predict_rul,
+        list_sample_engines,
+        get_engine_detail,
+        get_preset_inputs
+    )
+    from backend.app.schemas import PredictRequest, SensorReading
+except ImportError:
+    from main import (
+        load_artifacts,
+        get_health,
+        get_model_info,
+        get_metrics,
+        predict_rul,
+        list_sample_engines,
+        get_engine_detail,
+        get_preset_inputs
+    )
+    from schemas import PredictRequest, SensorReading
 
 # Setup fixture
 @pytest.fixture(scope="session", autouse=True)

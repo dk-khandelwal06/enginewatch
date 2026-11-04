@@ -17,18 +17,47 @@ from fastapi import FastAPI, HTTPException, Request, Response, status
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
 
-# Add src to sys.path so we can import preprocess
-sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'src')))
+# Ensure application, backend, and src directories are in sys.path
+APP_DIR = os.path.dirname(os.path.abspath(__file__))
+BACKEND_DIR = os.path.abspath(os.path.join(APP_DIR, '..'))
+SRC_DIR = os.path.join(BACKEND_DIR, 'src')
+ROOT_DIR = os.path.abspath(os.path.join(BACKEND_DIR, '..'))
 
-from schemas import (
-    PredictRequest,
-    PredictResponse,
-    HealthResponse,
-    ModelInfoResponse,
-    EngineSummary,
-    EngineDetailResponse,
-    SensorDeviation
-)
+for p in [APP_DIR, BACKEND_DIR, SRC_DIR, ROOT_DIR]:
+    if p not in sys.path:
+        sys.path.insert(0, p)
+
+try:
+    from backend.app.schemas import (
+        PredictRequest,
+        PredictResponse,
+        HealthResponse,
+        ModelInfoResponse,
+        EngineSummary,
+        EngineDetailResponse,
+        SensorDeviation
+    )
+except ImportError:
+    try:
+        from .schemas import (
+            PredictRequest,
+            PredictResponse,
+            HealthResponse,
+            ModelInfoResponse,
+            EngineSummary,
+            EngineDetailResponse,
+            SensorDeviation
+        )
+    except ImportError:
+        from schemas import (
+            PredictRequest,
+            PredictResponse,
+            HealthResponse,
+            ModelInfoResponse,
+            EngineSummary,
+            EngineDetailResponse,
+            SensorDeviation
+        )
 
 # Logging configuration
 logging.basicConfig(

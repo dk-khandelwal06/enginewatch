@@ -14,19 +14,59 @@ from sklearn.linear_model import Ridge
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.metrics import r2_score
 
-from preprocess import (
-    ACTIVE_SETTINGS,
-    ACTIVE_SENSORS,
-    BASE_FEATURES,
-    SENSOR_METADATA,
-    RUL_CAP,
-    ROLLING_WINDOW,
-    compute_rul_and_labels,
-    generate_rolling_features,
-    engine_aware_split,
-    nasa_scoring_function,
-    classify_health_status
-)
+import sys
+
+SRC_DIR = os.path.dirname(os.path.abspath(__file__))
+BACKEND_DIR = os.path.abspath(os.path.join(SRC_DIR, '..'))
+ROOT_DIR = os.path.abspath(os.path.join(BACKEND_DIR, '..'))
+
+for p in [SRC_DIR, BACKEND_DIR, ROOT_DIR]:
+    if p not in sys.path:
+        sys.path.insert(0, p)
+
+try:
+    from backend.src.preprocess import (
+        ACTIVE_SETTINGS,
+        ACTIVE_SENSORS,
+        BASE_FEATURES,
+        SENSOR_METADATA,
+        RUL_CAP,
+        ROLLING_WINDOW,
+        compute_rul_and_labels,
+        generate_rolling_features,
+        engine_aware_split,
+        nasa_scoring_function,
+        classify_health_status
+    )
+except ImportError:
+    try:
+        from .preprocess import (
+            ACTIVE_SETTINGS,
+            ACTIVE_SENSORS,
+            BASE_FEATURES,
+            SENSOR_METADATA,
+            RUL_CAP,
+            ROLLING_WINDOW,
+            compute_rul_and_labels,
+            generate_rolling_features,
+            engine_aware_split,
+            nasa_scoring_function,
+            classify_health_status
+        )
+    except ImportError:
+        from preprocess import (
+            ACTIVE_SETTINGS,
+            ACTIVE_SENSORS,
+            BASE_FEATURES,
+            SENSOR_METADATA,
+            RUL_CAP,
+            ROLLING_WINDOW,
+            compute_rul_and_labels,
+            generate_rolling_features,
+            engine_aware_split,
+            nasa_scoring_function,
+            classify_health_status
+        )
 
 def train_and_evaluate():
     print("=== EngineWatch ML Pipeline: Training & Evaluation ===")
