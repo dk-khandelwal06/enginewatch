@@ -552,3 +552,4 @@ export const PredictionLabSection = () => {
     </section>
   );
 };
+

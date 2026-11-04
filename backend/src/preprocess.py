@@ -145,3 +145,4 @@ def classify_health_status(rul: float) -> str:
         return "WATCH"
     else:
         return "CRITICAL"
+

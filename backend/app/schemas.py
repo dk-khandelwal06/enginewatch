@@ -249,3 +249,4 @@ class EngineDetailResponse(BaseModel):
     flight_hours_est: float
     active_sensors: Dict[str, float]
     history: List[EngineHistoryPoint]
+

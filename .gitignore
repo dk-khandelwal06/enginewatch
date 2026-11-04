@@ -33,3 +33,4 @@ Thumbs.db
 # Large training raw downloads (keep processed models and json metadata)
 backend/data/*.txt
 !backend/models/*.json
+

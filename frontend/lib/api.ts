@@ -190,3 +190,4 @@ export async function fetchPresetInputs(): Promise<Record<string, any>> {
   if (!res.ok) throw new Error(`Presets fetch failed: ${res.statusText}`);
   return res.json();
 }
+

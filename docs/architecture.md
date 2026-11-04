@@ -58,3 +58,4 @@
 | `s_17` | Bleed Enthalpy | btu/lbm | 392.27 | Customer bleed thermal load |
 | `s_20` | High-Pressure Turbine Coolant Bleed | lbm/s | 38.93 | Cooling margin degradation |
 | `s_21` | Low-Pressure Turbine Coolant Bleed | lbm/s | 23.36 | Thermal barrier fatigue |
+
