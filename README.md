@@ -37,7 +37,7 @@
     <a href="#platform-preview">Preview</a> &nbsp;·&nbsp;
     <a href="#machine-learning-approach">Machine Learning</a> &nbsp;·&nbsp;
     <a href="#api-architecture">API</a> &nbsp;·&nbsp;
-    <a href="#installation-and-setup">Setup</a> &nbsp;·&nbsp;&nbsp;·&nbsp;
+    <a href="#installation-and-setup">Setup</a> &nbsp;·&nbsp;
     <a href="">Demo Video</a>
   </p>
 
